@@ -1,0 +1,35 @@
+.game-navbar {
+  background: linear-gradient(135deg, #111827, #1e293b);
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: #cbd5e1 !important;
+
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  color: #facc15 !important;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 991px) {
+  .actions {
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+}

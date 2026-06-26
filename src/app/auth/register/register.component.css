@@ -1,0 +1,99 @@
+.auth-page{
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+
+  padding: 40px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(15px);
+
+  border-radius: 25px;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+
+  color: white;
+}
+
+.logo {
+  font-size: 60px;
+
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+
+  color: #cbd5e1;
+}
+
+label {
+  color: #e2e8f0;
+}
+
+.form-control {
+  background: #0f172a;
+
+  border: none;
+
+  color: white;
+
+  border-radius: 12px;
+
+  padding: 12px;
+}
+
+.form-control:focus {
+  background: #0f172a;
+
+  color: white;
+
+  box-shadow: 0 0 0 2px #facc15;
+}
+
+.switch {
+  margin-top: 20px;
+
+  text-align: center;
+}
+
+a {
+  color: #facc15;
+
+  text-decoration: none;
+}
+
+.form-control {
+
+  background: rgba(0, 0, 0, 0.434);
+
+  color:white;
+
+  border:none;
+
+}
+
+
+.form-control::placeholder {
+
+  color:#ffffff;
+
+  opacity:.7;
+
+}

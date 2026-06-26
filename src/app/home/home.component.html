@@ -1,0 +1,161 @@
+<div class="home-page">
+  <!-- HERO -->
+
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1>Play. Compete. Have Fun. 🎲</h1>
+
+          <p>Join thousands of players and enjoy online board games.</p>
+
+          <div class="d-flex gap-3">
+            <button class="btn btn-warning rounded-pill px-4">
+              Start Game
+            </button>
+
+            <button class="btn btn-outline-light rounded-pill px-4">
+              Explore
+            </button>
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-center">
+          <div class="hero-box">🎲</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAROUSEL -->
+
+  <section class="container py-5">
+    <h2 class="section-title">🔥 Featured Games</h2>
+
+    <div id="gameCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="game-banner">
+            <h2>Chess Battle</h2>
+
+            <p>Strategy game for everyone</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="game-banner">
+            <h2>Card Arena</h2>
+
+            <p>Challenge other players</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="game-banner">
+            <h2>Fantasy Quest</h2>
+
+            <p>Adventure board game</p>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        data-bs-target="#gameCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+
+      <button
+        class="carousel-control-next"
+        data-bs-target="#gameCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- GAME CARDS -->
+
+  <section class="container py-5">
+    <h2 class="section-title">🎮 Popular Games</h2>
+
+    <div class="row g-4">
+      <div class="col-md-4" *ngFor="let game of games">
+        <div class="game-card">
+          <div class="icon">
+            {{ game.icon }}
+          </div>
+
+          <h4>
+            {{ game.name }}
+          </h4>
+
+          <p>
+            {{ game.desc }}
+          </p>
+
+          <button class="btn btn-warning rounded-pill">Play</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ONLINE ROOM -->
+
+  <section class="container py-5">
+    <div class="room-box">
+      <h2>🌐 Online Rooms</h2>
+
+      <div class="row">
+        <div class="col-md-4" *ngFor="let room of rooms">
+          <div class="room">
+            <h5>
+              {{ room.name }}
+            </h5>
+
+            <span> {{ room.players }} Players </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+
+  <section class="container py-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="feature">
+          ⚡
+
+          <h4>Fast Match</h4>
+
+          <p>Find players instantly</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature">
+          🏆
+
+          <h4>Ranking</h4>
+
+          <p>Compete globally</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature">
+          💬
+
+          <h4>Community</h4>
+
+          <p>Chat with friends</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

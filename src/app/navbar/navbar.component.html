@@ -1,0 +1,80 @@
+<nav class="navbar navbar-expand-lg navbar-dark game-navbar sticky-top">
+  <div class="container">
+    <a
+      class="navbar-brand fw-bold d-flex align-items-center gap-2"
+      routerLink="/"
+    >
+      <span class="logo"> 🎲 </span>
+      BoardVerse
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarMenu"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/"> Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/games"> Games </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/rooms"> Rooms </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/ranking"> Ranking </a>
+        </li>
+      </ul>
+
+      <div class="actions d-flex align-items-center gap-3">
+        @if (authService.currentUser()) {
+          <div class="d-flex align-items-center gap-3">
+            <button
+              class="btn btn-outline-light rounded-circle position-relative p-2"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#socialSidebar"
+              style="
+                width: 40px;
+                height: 40px;
+                border: none;
+                background: rgba(255, 255, 255, 0.1);
+              "
+            >
+              👥
+              <span
+                class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"
+              >
+                <span class="visually-hidden">New alerts</span>
+              </span>
+            </button>
+
+            <span class="text-white fw-bold d-flex align-items-center gap-2">
+              <span style="color: var(--bs-warning)">👤</span>
+              {{ authService.currentUser() }}
+            </span>
+            <button
+              class="btn btn-outline-danger rounded-pill px-4"
+              (click)="onLogout()"
+            >
+              Logout
+            </button>
+          </div>
+        } @else {
+          <a class="btn btn-outline-light rounded-pill px-4" routerLink="/login"
+            >Login</a
+          >
+          <a class="btn btn-warning rounded-pill px-4" routerLink="/register"
+            >Join</a
+          >
+        }
+      </div>
+    </div>
+  </div>
+</nav>

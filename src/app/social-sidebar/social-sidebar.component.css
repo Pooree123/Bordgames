@@ -1,0 +1,41 @@
+/* Sidebar Glass Effect */
+.glass-sidebar {
+  background: rgba(15, 23, 42, 0.85); /* Dark Navy */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+  width: 350px;
+}
+
+/* Custom Pills (Tabs) */
+.custom-pills .nav-link {
+  color: #cbd5e1;
+  border-radius: 20px;
+  margin: 0 2px;
+  transition: all 0.3s;
+}
+
+.custom-pills .nav-link:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.custom-pills .nav-link.active {
+  background-color: var(--bs-warning);
+  color: #020617;
+  font-weight: bold;
+}
+
+/* Status Indicator */
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px currentColor;
+}
+
+/* Search Input */
+.custom-search .form-control:focus {
+  box-shadow: none;
+  border-color: var(--bs-warning);
+}

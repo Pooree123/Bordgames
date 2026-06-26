@@ -1,0 +1,54 @@
+<div class="auth-page">
+  <div class="auth-card">
+    <div class="logo">🎲</div>
+    <h2>Create Account</h2>
+    <p>Join BoardVerse</p>
+
+    <form (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label> Username </label>
+        <input 
+          type="text" 
+          class="form-control" 
+          placeholder="Username" 
+          name="username"
+          [(ngModel)]="registerData.username"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label> Password </label>
+        <input 
+          type="password" 
+          class="form-control" 
+          placeholder="Password" 
+          name="password"
+          [(ngModel)]="registerData.password"
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label> Confirm Password </label>
+        <input
+          type="password"
+          class="form-control"
+          placeholder="Confirm password"
+          name="confirmPassword"
+          [(ngModel)]="registerData.confirmPassword"
+          required
+        />
+      </div>
+
+      <button type="submit" class="btn btn-warning w-100 rounded-pill">
+        Register
+      </button>
+
+      <div class="switch mt-3 text-center">
+        Already have account?
+        <a routerLink="/login"> Login </a>
+      </div>
+    </form>
+  </div>
+</div>

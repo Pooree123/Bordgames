@@ -1,0 +1,54 @@
+.footer {
+  background: linear-gradient(135deg, #020617, #111827);
+
+  color: white;
+
+  margin-top: auto;
+}
+
+.footer h6 {
+  color: #facc15;
+}
+
+.footer a {
+  display: block;
+
+  color: #cbd5e1;
+
+  margin: 8px 0;
+
+  cursor: pointer;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.social {
+  display: flex;
+
+  gap: 15px;
+}
+
+.social span {
+  width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .social {
+    justify-content: center;
+  }
+}

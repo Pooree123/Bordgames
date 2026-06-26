@@ -1,0 +1,42 @@
+<div class="auth-page">
+  <div class="auth-card">
+    <div class="logo">🎲</div>
+    <h2>Login</h2>
+    <p>Welcome back to BoardVerse</p>
+
+    <form (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label> Username </label>
+        <input 
+          type="text" 
+          class="form-control" 
+          placeholder="Username" 
+          name="username"
+          [(ngModel)]="loginData.username" 
+          required
+        />
+      </div>
+
+      <div class="mb-3">
+        <label> Password </label>
+        <input 
+          type="password" 
+          class="form-control" 
+          placeholder="Password" 
+          name="password"
+          [(ngModel)]="loginData.password" 
+          required
+        />
+      </div>
+
+      <button type="submit" class="btn btn-warning w-100 rounded-pill">
+        Login
+      </button>
+
+      <div class="switch mt-3 text-center">
+        Don't have an account?
+        <a routerLink="/register"> Register </a>
+      </div>
+    </form>
+  </div>
+</div>
