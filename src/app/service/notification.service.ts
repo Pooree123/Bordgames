@@ -21,7 +21,7 @@ export class NotificationService {
     if (!token) return;
 
     this.hubConnection = new signalR.HubConnectionBuilder()
-      .withUrl('https://influenced-wales-lexington-compaq.trycloudflare.com/hubs/social', { 
+      .withUrl('https://for-citizenship-jackie-sur.trycloudflare.com/hubs/social', { 
         accessTokenFactory: () => token
       })
       .withAutomaticReconnect()
