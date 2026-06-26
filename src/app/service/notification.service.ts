@@ -21,7 +21,7 @@ export class NotificationService {
     if (!token) return;
 
     this.hubConnection = new signalR.HubConnectionBuilder()
-      .withUrl('https://for-citizenship-jackie-sur.trycloudflare.com/hubs/social', { 
+      .withUrl('https://robinson-artificial-buy-cheapest.trycloudflare.com/hubs/social', { 
         accessTokenFactory: () => token
       })
       .withAutomaticReconnect()

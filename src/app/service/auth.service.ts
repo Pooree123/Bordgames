@@ -13,7 +13,7 @@ export class AuthService {
   private router = inject(Router);
   private notificationService = inject(NotificationService); // 2. Inject เข้ามาใช้งาน
   
-  private apiUrl = 'https://for-citizenship-jackie-sur.trycloudflare.com/api/Auth';
+  private apiUrl = 'https://robinson-artificial-buy-cheapest.trycloudflare.com/api/Auth';
 
   // ดึงชื่อจาก LocalStorage ตรงๆ แทนการแกะ Token
   currentUser = signal<string | null>(localStorage.getItem('username'));
