@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class SocialService {
   private http = inject(HttpClient);
-  private apiUrl = 'https://robinson-artificial-buy-cheapest.trycloudflare.com/api/Social'; // เปลี่ยนพอร์ตให้ตรงกับ Backend ของคุณ
+  private apiUrl = 'https://phys-strand-budgets-dave.trycloudflare.com/api/Social'; // เปลี่ยนพอร์ตให้ตรงกับ Backend ของคุณ
 
   // 1. GET /api/Social/search?query=...
   searchUsers(query: string): Observable<any[]> {

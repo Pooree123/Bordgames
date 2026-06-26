@@ -21,7 +21,7 @@ export class NotificationService {
     if (!token) return;
 
     this.hubConnection = new signalR.HubConnectionBuilder()
-      .withUrl('https://robinson-artificial-buy-cheapest.trycloudflare.com/hubs/social', { 
+      .withUrl('https://phys-strand-budgets-dave.trycloudflare.com/hubs/social', { 
         accessTokenFactory: () => token
       })
       .withAutomaticReconnect()
