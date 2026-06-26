@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class SocialService {
   private http = inject(HttpClient);
-  private apiUrl = 'https://localhost:7244/api/Social'; // เปลี่ยนพอร์ตให้ตรงกับ Backend ของคุณ
+  private apiUrl = 'https://influenced-wales-lexington-compaq.trycloudflare.com/api/Social'; // เปลี่ยนพอร์ตให้ตรงกับ Backend ของคุณ
 
   // 1. GET /api/Social/search?query=...
   searchUsers(query: string): Observable<any[]> {
